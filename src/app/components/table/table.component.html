@@ -1,0 +1,28 @@
+<div>
+    <!-- Table containing employee records -->
+    <table border="1">
+        <caption>Employee</caption>
+
+        <!-- table headers -->
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Login</th>
+                <th>Name</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+
+        <!-- table body -->
+        <tbody>
+            <!-- Loop through array to display list -->
+            <tr *ngFor="let details of test ">
+                <td>{{details.id}}</td>
+                <td>{{details.login}}</td>
+                <td>{{details.name}}</td>
+                <td>{{details.salary}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

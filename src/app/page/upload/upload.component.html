@@ -1,0 +1,25 @@
+<div>
+    <!-- Side Nav -->
+  <div>
+    <app-side-nav></app-side-nav>
+  </div>
+
+  <body>
+    <!-- Upload file Display -->
+    <div>
+        <!-- Header + Buttons -->
+        <div>
+            <button (click)="chooseFileToUpload()">Choose File</button>
+        </div>
+        
+        <!-- File Chosen + Upload -->
+        <div>
+            <!-- Display File chosen -->
+            {{fileName}}
+            <!-- Upload button -->
+            <button (click)="handleFileUpload()">Upload</button>
+        </div>
+    </div>
+    
+  </body>
+</div>
