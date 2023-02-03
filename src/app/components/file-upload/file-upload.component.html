@@ -1,12 +1,16 @@
 <div class="text-center">
-  <input
-    class="form-control"
-    type="file"
-    id="file"
-    (change)="onChange($event)"
-  />
+  <div>
+    <input
+      class="form-control"
+      type="file"
+      id="file"
+      (change)="onChange($event)"
+    />
+  </div>
 
-  <button (click)="onUpload()" class=".btn-primary">Upload</button>
+  <div>
+    <button (click)="onUpload()" class=".btn-primary">Upload</button>
+  </div>
 </div>
 
 <!-- Shareable short link of  uploaded file -->
