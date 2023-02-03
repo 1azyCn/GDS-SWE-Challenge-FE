@@ -7,11 +7,11 @@ import { UploadComponent } from './page/upload/upload.component';
 
 const routes: Routes = [
   //Login page + Default Page
-  {path: '', component: LoginComponent},
+  {path: '', component: UploadComponent},
   {path: 'login', component: LoginComponent},
 
   //Upload page
-  {path: 'upload/:username', component: UploadComponent},
+  {path: 'upload', component: UploadComponent},
 
   // DashBoard
   {path: 'dashboard', component: DashboardComponent},
