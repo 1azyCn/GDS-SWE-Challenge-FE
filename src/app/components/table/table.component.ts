@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
-import { Column } from './Column';
+import { Column } from '../../model/Column';
 
 @Component({
   selector: 'app-table',
