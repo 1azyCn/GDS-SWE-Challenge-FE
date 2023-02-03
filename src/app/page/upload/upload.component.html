@@ -7,18 +7,7 @@
   <body>
     <!-- Upload file Display -->
     <div>
-        <!-- Header + Buttons -->
-        <div>
-            <button (click)="chooseFileToUpload()">Choose File</button>
-        </div>
-        
-        <!-- File Chosen + Upload -->
-        <div>
-            <!-- Display File chosen -->
-            {{fileName}}
-            <!-- Upload button -->
-            <button (click)="handleFileUpload()">Upload</button>
-        </div>
+        <app-file-upload></app-file-upload>
     </div>
     
   </body>

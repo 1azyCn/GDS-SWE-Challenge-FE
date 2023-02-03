@@ -1,0 +1,20 @@
+<div class="text-center">
+  <input
+    class="form-control"
+    type="file"
+    id="file"
+    (change)="onChange($event)"
+  />
+
+  <button (click)="onUpload()" class=".btn-primary">Upload</button>
+</div>
+
+<!-- Shareable short link of  uploaded file -->
+<div class="container text-center jumbotron" *ngIf="shortLink">
+  File Selected : {{ shortLink }}
+</div>
+
+<!--Flag variable is used here-->
+<div class="container" *ngIf="errorMsg">
+  <h6>Upload Failed</h6>
+</div>
